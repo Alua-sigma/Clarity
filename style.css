@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff0f5;
+}
+
+/* Верх сайта */
+.header {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.logo {
+  font-size: 48px;
+  color: #d883a1;
+  margin-bottom: 10px;
+}
+
+.quote {
+  font-size: 18px;
+  font-style: italic;
+  color: #a76585;
+}
+
+/* Центр сайта */
+.center-info {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #ffe4ec;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(216, 134, 160, 0.3);
+  text-align: center;
+}
+
+.center-info h2 {
+  color: #c06283;
+}
+
+.center-info p {
+  color: #814c64;
+}
+
+/* Кнопки */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto 50px;
+}
+
+.left-buttons, .right-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.button {
+  width: 180px;
+  height: 60px;
+  background-color: #f7c7d6;
+  color: #5e2b45;
+  font-weight: bold;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(216, 134, 160, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+pointer-event:auto;
+}
+
+.button:hover {
+  background-color: #f4b0c7;
+  transform: scale(1.05);
+}
+
+/* Контент-блок (попап) */
+.content-block {
+  
+  opacity: 0;
+  pointer-events: none;
+  z-index: 20;
+  transition: opacity 0.4s ease, transform 0.5s ease;
+ }
+.content-block.active {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1); /* Центр и нормальный размер */
+  pointer-events: auto;
+  z-index: 300;
+ width: 500px;
+  height: 600px;
+position: fixed;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+#fon.vin {
+  opacity: 0;
+  background-color: rgba(128, 128, 128, 0);
+  backdrop-filter: blur(0px);
+  pointer-events: none;
+  z-index: 0;
+
+}
+
+#fon.sip {
+  opacity: 1;
+background-color: rgba(255, 221, 238, 0.4); /* Мягкий розовый */
+    backdrop-filter: blur(1.5px);
+  pointer-events: auto;
+  z-index: 10;
+transition: opacity 0.5s ease, background-color 0.5s ease, backdrop-filter 0.5s ease; /* Увеличил время для backdrop-filter */
+  } #fon {
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+transition: opacity 0.33s ease, background-color 0.33s ease, backdrop-filter 0.33s ease; /* Общая анимация для фона */
+  will-change: opacity, background-color, backdrop-filter;
+}
+

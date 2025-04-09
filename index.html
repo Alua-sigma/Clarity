@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Сайт с кнопками и попапами</title>
+  <link rel="stylesheet" href="Алуа дизайн.css" />
+<script type="text/javascript" src="https://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=upHs7_ltJMXtCFLsbJuC7D_4B-cJxv3T0N2Zisfe2ZjeEcEVYHiXLclnEgRrEZ9Qi2YQKtJqB6Y6DV_Bz4Zx3YMTvgJlILiT6p_byzGti-YY5ftDnsoonPSn_RYNxb1sc84HyFhHSFwh8A8fdAoZlv0TQU_Z2M-ambwBVxQ-a-j1i58kMoPwdDUUYwp5xj4epgYw5N5qbQDxKF56K42s3hpp8IBB6DDdH-N9wNpRG9ryse4kdq9KfYGLqYroRE3eod4Z62vy7S2wIoPYUVyzGq8Hp8hSYOYOTn6KL6EkoCE2rqKVZiFO85tFLp-N52cFCMXrkCVKuTrkTHk-Eg5geI1ERtwWUuRCXjaZfEGBJEkmXFNV3a-O1iVACrzbFGnCj1AMt-2CbTFDf478RtMkJS3bh9QNm-Ena06DeqPK9NUrSOaDirFvgq95kyv68oTd5ScBSVQ2k2FsN77pcuRVRYdb8SyOaPUPeEP1jJMkQD3iJK5dVmR94WGmHNjwHg9FlCCTLWxZ0LyPRieRvANwpYtZU8fmJI19KsHdXSiRKgYrW3rz30gV8FIRIcNtCgak4HFnQ0nKPfG8hzZ9MoCGfcTd9MA8yA2T921-10dFRvQREQpeDD-Bu6tpRymtSozgnWVcltAfL3CNX5pReRJgbD_tMv8UPXjMC4ePgadQNzMwVZSrLmv4Q2SkDrJtp0H_m5pbbxpdEKeETJ3UDfYinnOG2TtVqvKv58oqnu1rvBMykSqGUzIQvK85nFjtAoirimxF-KuHY4mvmibgm9-PXtNsJbx4jjlwQtkFxDvShiqCQr0Sf0CE_0VaG2_k-nxoGUewsWcoCWU0pkpjO9QKUC--FBbNa9FV9ub5auMTlpelvwDs04f0nQcOnXDEU_4ajHZ7Hj32MwmMbsUtpfn6nuPVwiFWJxhoBDgwIwBg5JFofxzWGjeV2BP0q6AbuXQ_QG0upOTNq1waooAToyovpE0oSqiNTeigmfJSH1IHxibes5F3OMpvjV-8zZxAWtENmS096u0yyu2u4iLZ_B2AGulKWl2l7fvTAIdSEQ8pbh3gapJCYJyF1V6g0ES7hk5ibsVWGjaLuxjVVkulA3vqJ6MDFvhlDt0zsYFSeuoyZucZ6nYvHfplZnRCotHGWssgVCB5oUkgQHeHk01zOuEU9JqFgC2gC5lZ8swb9milJjpS_qnsbliwBsZzUlRhN_RDzWLiWIRo5KiuFED93xVUHWnVIsOHDu9UYIGI9fDRqokagU4bFhWqUE_pnCRIgsUN3nBJk8rbJJZ4XXc8m5QpwkIUPoHtdKYG4RIcoY2UwBb3hMRJ7oNTr5nuyhMWnPCh7KKjTQscfxV9DUFXxsqEK4bb14rHlt8mkQo8TPPfz3lyDAjT6Nc9NC04HXqQkJqnghwsSnBICETfYwdc0V8vFGsZgREEBXEYPeKNFnDNAVV1hiiJ68GwHar6WJJKnXWQekoZ4QiD1dIMB3DiZpaWVpfCEvnsHYh7dE0YYZ3LzXI" charset="UTF-8"></script></head>
+<body>
+
+
+  <div id="fon" class="vin" onclick="toggleBackground()"></div>
+
+ <div class="header">
+    <h1 class="logo">Clarity</h1>
+    <p class="quote">"Поддержка — это первый шаг к исцелению."</p>
+  </div>
+
+  
+  <div class="center-info">
+    <h2>Наша миссия</h2>
+    <p>Clarity помогает людям найти психологическую опору, понять себя и обрести внутреннюю гармонию.</p>
+  </div> 
+
+  <!-- Кнопки -->
+  <div class="buttons">
+    <div class="left-buttons">
+      <div class="button" onclick="changeBackground(); showContent(this, 1)">Справиться с тревогой</div>
+      <div class="button" onclick="changeBackground(); showContent(this, 2)">Как выразить чувства</div>
+      <div class="button" onclick="changeBackground(); showContent(this, 3)">Тепло к себе</div>
+      <div class="button" onclick="changeBackground(); showContent(this, 4)">Когда устал(а)</div>
+    </div>
+    <div class="right-buttons">
+      <div class="button" onclick="changeBackground(); showContent(this, 5)">Понять себя</div>
+      <div class="button" onclick="changeBackground(); showContent(this, 6)">Поддержка близких</div>
+      <div class="button" onclick="changeBackground(); showContent(this, 7)">Ты — не сравнение</div>
+      <div class="button" onclick="changeBackground(); showContent(this, 8)">Маленькими шагами</div>
+    </div>
+  </div>
+<div id="content-1" class="content-block">Иногда тревога приходит без стука. Сердце начинает биться быстрее, мысли путаются, и кажется, будто весь мир становится слишком громким. Это нормально. Тревога — это естественная реакция на неопределённость, угрозу или просто перегруз. Главное — помнить: ты не один(одна) в этом.
+
+Попробуй сначала просто остановиться. Сделай глубокий вдох… и медленный выдох. Почувствуй, как воздух проходит через тебя. Это твоё безопасное пространство. Даже в вихре мыслей ты можешь создать тихое место внутри себя.
+
+Спроси себя: «Что меня тревожит прямо сейчас?». Иногда простое признание своих чувств уже облегчает тяжесть внутри. Не нужно сразу искать решение. Достаточно просто быть рядом с собой.
+
+Ты не обязан(а) справляться в одиночку. Поговори с кем-то, кому доверяешь. Или просто запиши свои мысли. Это поможет им выйти наружу, а тебе — почувствовать себя легче.
+
+И помни: тревога пройдёт. Она не определяет тебя. Ты — больше, чем чувство. Ты уже делаешь достаточно, просто стараясь быть здесь и сейчас.
+
+</div>
+<div id="content-2" class="content-block">Эмоциональное выгорание — это не просто усталость. Это состояние, когда кажется, что сил больше нет, а привычные вещи перестают радовать. Ты можешь чувствовать апатию, раздражение или желание сбежать от всего. Это не слабость и не лень — это сигнал, что ты слишком долго держал(а) в себе напряжение, не давая себе отдохнуть и восстановиться.
+
+Важно помнить: выгорание — это не конец. Это приглашение остановиться, прислушаться к себе и начать заботиться о себе на новом уровне. Попробуй уделить время отдыху, даже если кажется, что «сейчас не время». Поговори с близким человеком, разреши себе не быть идеальным(ой). И, главное, помни: ты заслуживаешь поддержки, даже если тебе кажется, что справляться нужно самому(ой). Внутри тебя есть ресурс, чтобы восстановиться — просто дай себе немного времени.</div>
+<div id="content-3" class="content-block">Принять себя — значит признать свою уникальность, со всеми сильными и уязвимыми сторонами. Это не про идеальность, а про честность с собой. Бывает трудно полюбить в себе то, что, как кажется, не соответствует чьим-то ожиданиям. Но именно в этом — сила принятия: позволить себе быть живым, настоящим.
+
+Ты не обязан(а) соответствовать чужим стандартам, чтобы быть ценным(ой). То, как ты чувствуешь, думаешь, переживаешь — важно. Не нужно ждать момента, когда «станешь лучше», чтобы начать к себе бережно относиться. Этот момент — сейчас. Маленькие шаги: доброе слово себе, передышка, отказ от самокритики — уже создают почву для внутренней опоры.
+
+Ты — не набор недостатков, а человек с историей, опытом и силой меняться. Принятие себя — это процесс. Он начинается с простого: разрешить себе быть собой.
+
+</div>
+<div id="content-4" class="content-block">Когда каждый день похож на марафон без финиша, легко потеряться в усталости. Эмоциональное выгорание — это не просто усталость, это глубокое истощение, когда даже любимые дела теряют смысл, а простые задачи кажутся непосильными. Это не слабость, а сигнал: тебе нужно восстановление.
+
+Позволь себе притормозить. Отдохнуть — это не «лениться», а заботиться о себе. Пересмотри приоритеты: не все задачи одинаково важны, а ты не обязан(а) быть продуктивным(ой) всё время. Иногда достаточно просто быть.
+
+Если чувствуешь, что больше не можешь — это не значит, что с тобой что-то не так. Это значит, что ты человек. Ты имеешь право на отдых, на поддержку, на перерывы.
+
+Сделай шаг назад, посмотри на себя с заботой. Возможно, пора сказать себе: «Мне тяжело, и это нормально. Я заслуживаю передышки». Восстановление начинается с признания своих чувств.</div>
+<div id="content-5" class="content-block">Принять себя — значит признать, что ты уже ценен(а), просто потому что ты есть. Не нужно быть идеальным или соответствовать чьим-то ожиданиям, чтобы заслужить уважение и любовь. Самооценка — это не о том, как тебя видят другие, а о том, как ты видишь себя.
+
+Мы часто сравниваем себя с другими и забываем, что у каждого свой путь, свои трудности и победы. Ты уникален(на), и в этом твоя сила. Ошибки и несовершенства не делают тебя плохим — они делают тебя живым человеком.
+
+Путь к принятию себя — это не мгновенное озарение, а процесс. Начни с малого: говори с собой мягко, не ругай за слабости, замечай, за что можешь себя похвалить. Поддерживай себя так, как поддержал(а) бы друга.
+
+Ты достоин(на) быть на своей стороне. Помни: ты не обязан(а) меняться, чтобы стать «достаточно хорошим». Ты уже достаточно. Уже сейчас.</div>
+<div id="content-6" class="content-block">Здоровые границы — это не стены, отгораживающие тебя от мира. Это линии, которые помогают тебе чувствовать себя в безопасности, сохранять уважение к себе и строить искренние отношения с другими. Умение сказать «нет», выражать свои чувства и потребности — не эгоизм, а забота о себе.
+
+Многие из нас боятся установить границы, потому что боятся обидеть других или показаться грубыми. Но настоящая близость возможна только тогда, когда ты честен(а) с собой и с окружающими. Границы помогают сохранить энергию, не теряться в чужих ожиданиях и быть собой.
+
+Устанавливать границы — значит уважать себя и других. Это умение говорить: «Мне это неудобно», «Я не готов(а) к этому», «Мне нужно время». И это нормально. Люди, которые действительно тебя ценят, примут твои границы.
+
+Ты имеешь право на комфорт, на спокойствие и на выбор. Забота о себе начинается с уважения к своим чувствам. Границы — это акт любви к себе.
+
+</div>
+<div id="content-7" class="content-block">Перемены — неотъемлемая часть жизни, и хотя они могут пугать, они также открывают двери для роста и новых возможностей. В мире, где все постоянно меняется, способность адаптироваться становится важным навыком. Принятие перемен не означает пассивного согласия с ними, а скорее умение воспринимать их как естественную часть своего пути.
+
+Перемены могут быть как внешними, так и внутренними: новая работа, изменения в отношениях, или даже изменение взглядов на жизнь. Важно понять, что каждый момент перемен — это шанс для роста, который помогает нам стать сильнее и мудрее.
+
+Отношение к переменам зависит от нашего восприятия. Вместо того чтобы бояться неизведанного, стоит научиться принимать и использовать его как возможность для саморазвития. Хотя страх и тревога — естественные реакции на изменения, важно помнить, что в трудные моменты мы становимся более гибкими и устойчивыми.
+
+Принятие перемен также подразумевает прощение прошлого и готовность двигаться вперед. С каждым новым этапом мы становимся более открытыми для будущих возможностей, и это помогает нам идти по жизни с уверенностью.</div>
+<div id="content-8" class="content-block">В повседневной жизни мы часто забываем о себе, отдавая всю энергию другим или работе. Однако забота о себе — это не роскошь, а необходимость для поддержания психоэмоционального баланса. Только заботясь о себе, мы можем эффективно поддерживать других и справляться с трудностями.
+
+Самопомощь включает в себя не только физическое здоровье, но и психическое благополучие. Это может быть простое занятие любимым делом, медитация, прогулка на свежем воздухе или общение с близкими людьми. Важно понимать, что отдых и время для себя не являются проявлением эгоизма, а наоборот, это способ восстановить силы и вернуть внутреннюю гармонию.
+
+Слушать себя и свои потребности — это первый шаг к лучшему самочувствию. Нужно научиться устанавливать границы и давать себе право на отдых. Это помогает избежать выгорания и поддерживать жизненный тонус.
+
+Не забывайте, что самопомощь — это долгосрочный процесс. Она требует регулярности, внимания и осознанности. Задача состоит в том, чтобы заботиться о себе, даже когда кажется, что всё идет по плану. Помните: вы заслуживаете заботы и любви, и только в состоянии внутренней гармонии можете лучше поддерживать других.
+
+</div>
+
+<script>
+  function changeBackground() {
+    const fon = document.getElementById('fon');
+    if (fon.classList.contains('vin')) {
+      fon.classList.remove('vin');
+      fon.classList.add('sip');
+    }
+  }
+
+  function toggleBackground() {
+  const fon = document.getElementById('fon');
+  const allContentBlocks = document.querySelectorAll('.content-block.active');
+
+  allContentBlocks.forEach(content => {
+    content.style.opacity = '0';
+    content.style.transform = 'translate(-50%, -50%) scale(0.5)';
+    content.style.pointerEvents = 'none';
+
+    setTimeout(() => {
+      content.classList.remove('active');
+      content.style.top = '';
+      content.style.left = '';
+      content.style.transform = '';
+    }, 400);
+  });
+
+  if (fon.classList.contains('sip')) {
+    fon.style.opacity = '0';
+    fon.style.backgroundColor = 'rgba(128,128,128,0)';
+    fon.style.backdropFilter = 'blur(0px)';
+    setTimeout(() => {
+      fon.classList.remove('sip');
+      fon.classList.add('vin');
+      fon.style.opacity = '';
+      fon.style.backgroundColor = '';
+      fon.style.backdropFilter = '';
+    }, 400);
+  }
+}
+function showContent(button, num) {
+  const allContentBlocks = document.querySelectorAll('.content-block');
+  allContentBlocks.forEach(block => {
+    block.classList.remove('active');
+    block.style.opacity = '0';
+    block.style.pointerEvents = 'none';
+    block.style.transform = '';
+    block.style.top = '';
+    block.style.left = '';
+  });
+
+  const content = document.getElementById('content-' + num);
+  const rect = button.getBoundingClientRect();
+
+  // Устанавливаем блок туда, где находится кнопка
+  content.style.top = `${rect.top + rect.height / 2}px`;
+  content.style.left = `${rect.left + rect.width / 2}px`;
+  content.style.transform = 'translate(-50%, -50%) scale(0.5)';
+  content.style.opacity = '0';
+  content.style.pointerEvents = 'none';
+  content.classList.add('active');
+
+  // Задержка, чтобы браузер применил стартовое состояние
+  setTimeout(() => {
+    content.style.top = '50%';
+    content.style.left = '50%';
+    content.style.transform = 'translate(-50%, -50%) scale(1)';
+    content.style.opacity = '1';
+    content.style.pointerEvents = 'auto';
+  }, 30);
+}</script>
+
+
+</body>
+</html> 
